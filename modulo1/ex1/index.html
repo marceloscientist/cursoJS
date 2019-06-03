@@ -10,6 +10,13 @@
 
 <body>
     <script>
+        function formataEndereco(endereco) {
+            return "O usuário mora em " + endereco.cidade
+            + "/" + endereco.uf
+            + ", no bairro " + endereco.bairro
+            + ", na rua " + endereco.rua
+            + " com no. " + endereco.numero
+        }
         var endereco = {
             rua: "Rua dos pinheiros",
             numero: 1293,
@@ -17,11 +24,7 @@
             cidade: "São Paulo",
             uf: "SP"
         };
-        alert("O usuário mora em " + endereco.cidade
-            + "/" + endereco.uf
-            + ", no bairro " + endereco.bairro
-            + ", na rua " + endereco.rua
-            + " com no. " + endereco.numero);
+        document.write(formataEndereco(endereco));
 
 
     </script>
